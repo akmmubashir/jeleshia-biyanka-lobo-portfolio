@@ -20,7 +20,9 @@ const AboutSection = () => {
       className="grid grid-cols-12 p-[80px_120px_60px] max-2xl:p-[80px_80px_60px] max-md:p-[40px_20px] gap-[40px] max-md:gap-[30px_0] items-center"
     >
       <div className="col-span-9 max-md:col-span-full">
-        <h2 className="text-white text-[32px] font-medium mb-[10px]">About</h2>
+        <h2 className="text-white text-[32px] max-md:text-[26px] font-medium mb-[10px]">
+          About
+        </h2>
         <p className="text-[18px] max-2xl:text-[16px] max-md:text-[14px] text-[#F5F5F5]">
           Graduated in 2017 with a Bachelor of Commerce in Accounts and Finance,
           I am a dedicated HR Executive/Admin with proven expertise in

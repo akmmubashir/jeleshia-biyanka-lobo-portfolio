@@ -10,17 +10,17 @@ const poppins = Poppins({
 export const metadata = {
   // metadataBase: new URL('/'),
   title:
-    "Creative With AKM - Home | Web Developer | Dubai | Freelancer | UI/UX Designer | Frontend Developer | NEXT JS | REACT JS",
+    "Experienced HR Executive and Admin - Jeleshia Biyanka Lobo | HR & Corporate Services Professional in Dubai",
   description:
-    "Welcome to Creative With AKM! Discover the digital artistry of Muhammed Mubashir, a Dubai-based front-end developer and UI/UX designer, crafting websites with React JS, Next JS, and Tailwind CSS that drive user engagement.",
+    "Meet Jeleshia Biyanka Lobo, a skilled HR Executive and Admin with extensive experience in recruitment, employee relations, and HR policy development. Based in Dubai, Jeleshia is proficient in enhancing employee engagement, managing HRIS, and ensuring compliance with industry standards. Connect with a dedicated HR professional who excels in fostering positive work environments and driving continuous improvement in HR practices",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title:
-      "Creative With AKM - Home | Web Developer | Dubai | Freelancer | UI/UX Designer | Frontend Developer | NEXT JS | REACT JS",
+      "Experienced HR Executive and Admin - Jeleshia Biyanka Lobo | HR & Corporate Services Professional in Dubai",
     description:
-      "Welcome to Creative With AKM! Discover the digital artistry of Muhammed Mubashir, a Dubai-based front-end developer and UI/UX designer, crafting websites with React JS, Next JS, and Tailwind CSS that drive user engagement.",
+      "Meet Jeleshia Biyanka Lobo, a skilled HR Executive and Admin with extensive experience in recruitment, employee relations, and HR policy development. Based in Dubai, Jeleshia is proficient in enhancing employee engagement, managing HRIS, and ensuring compliance with industry standards. Connect with a dedicated HR professional who excels in fostering positive work environments and driving continuous improvement in HR practices",
     // images: '/',
   },
 };

@@ -4,7 +4,9 @@ import { workHistoryData } from "../utils/data";
 const ExperienceSection = () => {
   return (
     <div className="flex flex-col p-[0px_120px] max-2xl:p-[0px_80px] max-md:p-[0px_20px] gap-y-[20px] max-md:gap-y-[10px]">
-      <h2 className="text-white text-[32px] font-medium">Work History</h2>
+      <h2 className="text-white text-[32px] max-md:text-[26px] font-medium">
+        Work History
+      </h2>
       <div className="grid grid-cols-12 gap-[40px] max-md:gap-[20px_0]">
         {workHistoryData?.map((item) => (
           <div
