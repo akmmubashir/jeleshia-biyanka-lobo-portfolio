@@ -3,31 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+.bgColor {
+	background: linear-gradient(to bottom, #5CDB95, #379683);
+}
+.bg-1 {
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, rgba(57, 110, 233, 0.8) 0%, #0c44b3 100%);
+}
+.bg-2 {
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, rgba(175, 82, 237, 0.9) 0%, #8830df 100%);
+	position: relative;
+	z-index: 1;
+}
+.bg-3 {
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #89d48c 0%, #54b059 100%);
+}
+.bg-4 {
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, rgb(238, 189, 124) 0%, rgb(230, 162, 78) 100%);
+}
+.bg-5 {
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #fe8392 0%, #fc4057 100%);
+}
+.bg-6 {
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, rgba(65, 65, 65, 0.98) 0%, rgb(36, 36, 36) 100%);
 }
