@@ -9,7 +9,7 @@ const ExperienceSection = () => {
         {workHistoryData?.map((item) => (
           <div
             key={item?.id}
-            className="col-span-full bg-[rgba(255,255,255,0.15)] p-[15px] rounded-[12px] flex flex-col gap-y-[10px]"
+            className="col-span-full bg-[rgba(255,255,255,0.05)] p-[15px] rounded-[12px] flex flex-col gap-y-[10px] shadow-lg"
           >
             <div className="flex flex-col gap-y-[5px]">
               <h3 className="text-white font-medium text-[26px] max-md:text-[20px]">

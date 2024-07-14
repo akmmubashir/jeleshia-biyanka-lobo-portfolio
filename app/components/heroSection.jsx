@@ -29,8 +29,8 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="col-span-6 max-md:col-span-full flex items-center justify-center max-md:mt-[20px]">
-        <div className="w-3/4 bg-white aspect-square rounded-full overflow-hidden">
-          <Image src={Avatar} alt="Avatar" className="w-full relative z-10" />
+        <div className="w-3/4 bg-white aspect-square rounded-full overflow-hidden relative z-10">
+          <Image src={Avatar} alt="Avatar" className="w-full" />
         </div>
       </div>
     </div>
