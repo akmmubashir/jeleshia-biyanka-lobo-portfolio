@@ -4,6 +4,8 @@ import HeroSection from "../components/heroSection";
 import AboutSection from "../components/aboutSection";
 import ExperienceSection from "../components/experienceSection";
 import EducationSection from "../components/educationSection";
+import SkillsSection from "../components/skillsSection";
+import ContactSection from "../components/contact";
 
 const HomePage = () => {
   return (
@@ -13,6 +15,8 @@ const HomePage = () => {
       <AboutSection />
       <ExperienceSection />
       <EducationSection />
+      <SkillsSection />
+      <ContactSection />
     </div>
   );
 };

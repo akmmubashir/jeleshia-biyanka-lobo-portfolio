@@ -1,3 +1,42 @@
+export const skillsData = [
+  "Excel proficiency",
+  "External recruitment",
+  "Payroll control",
+  "Recruitment",
+  "Salary review",
+  "Employee Relations",
+  "Employee record management",
+  "HR policy renewal",
+  "Leadership",
+];
+
+export const educationHistoryData = [
+  {
+    id: 1,
+    institute: "St. Agnes College, Autonomous",
+    course: "B. Com: Commerce",
+    location: "Mangalore, India",
+    startDate: "06/2014",
+    endDate: "04/2017",
+  },
+  {
+    id: 2,
+    institute: "St. Agnes College, Karnataka State",
+    course: "Pre-University: Commerce",
+    location: "Mangalore, India",
+    startDate: "06/2012",
+    endDate: "04/2014",
+  },
+  {
+    id: 3,
+    institute: "Vishwamangala High School, Karnataka State",
+    course: "High School Diploma",
+    location: "Mangalore, India",
+    startDate: null,
+    endDate: "04/2012",
+  },
+];
+
 export const workHistoryData = [
   {
     id: 1,
