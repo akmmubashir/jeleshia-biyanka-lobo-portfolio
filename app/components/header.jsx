@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import Avatar from "@/app/assets/common/avatar.webp";
+import Avatar from "@/app/assets/common/profile.webp";
 import Link from "next/link";
 
 const Header = () => {

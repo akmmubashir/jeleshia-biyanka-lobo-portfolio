@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Vector from "@/app/assets/common/vector.png";
-import Avatar from "@/app/assets/common/avatar.webp";
+import Avatar from "@/app/assets/common/profile.webp";
 import Link from "next/link";
 
 const HeroSection = () => {
