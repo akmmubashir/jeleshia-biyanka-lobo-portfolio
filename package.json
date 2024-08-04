@@ -13,6 +13,7 @@
 		"format:write": "prettier --write app"
 	},
 	"dependencies": {
+		"axios": "^1.7.3",
 		"formidable": "^3.5.1",
 		"framer-motion": "^11.3.2",
 		"next": "14.2.5",

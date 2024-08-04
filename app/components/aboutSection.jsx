@@ -64,7 +64,7 @@ const AboutSection = () => {
       </div>
       <div className="col-span-3 max-md:col-span-full">
         <div className="shadow-2xl w-fit">
-          <Image src={Resume} />
+          <Image src={Resume} alt="Resume" />
         </div>
         <div className="flex">
           <button className="ms-auto mt-[30px] max-md:mt-[20px] border-2 border-white bg-none hover:bg-white hover:text-[#379683] p-[12px_18px] max-md:p-[8px_14px] font-medium text-[18px] max-2xl:text-[16px] max-md:text-[14px]">
