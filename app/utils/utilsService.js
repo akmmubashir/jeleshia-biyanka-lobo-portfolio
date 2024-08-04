@@ -9,7 +9,7 @@ export async function fetchEducationData() {
       headers: {
         Authorization: `Bearer ${strapiToken}`,
       },
-      next: { revalidate: 0 },
+      next: { revalidate: 1000 },
     });
 
     if (!res.status === 200) {
@@ -32,7 +32,7 @@ export async function fetchProfileData() {
       headers: {
         Authorization: `Bearer ${strapiToken}`,
       },
-      next: { revalidate: 0 },
+      next: { revalidate: 1000 },
     });
 
     if (!res.status === 200) {
@@ -54,7 +54,7 @@ export async function fetchContactData() {
       headers: {
         Authorization: `Bearer ${strapiToken}`,
       },
-      next: { revalidate: 0 },
+      next: { revalidate: 1000 },
     });
 
     if (!res.status === 200) {
@@ -76,7 +76,7 @@ export async function fetchSkillsData() {
       headers: {
         Authorization: `Bearer ${strapiToken}`,
       },
-      next: { revalidate: 0 },
+      next: { revalidate: 1000 },
     });
 
     if (!res.status === 200) {
