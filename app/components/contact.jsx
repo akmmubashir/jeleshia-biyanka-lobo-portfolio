@@ -1,8 +1,10 @@
 import React from "react";
-import { InputField, TextField } from "./fields";
 import Link from "next/link";
+import { InputField, TextField } from "./fields";
+import { fetchContactData } from "../utils/utilsService";
 
-const ContactSection = () => {
+export default async function ContactSection() {
+  const contactData = await fetchContactData();
   return (
     <div className="grid grid-cols-12 gap-[60px] max-md:gap-[40px_0] p-[80px_120px] max-2xl:p-[80px_80px] max-md:p-[30px_20px]">
       <div className="col-span-6 max-md:col-span-full">
@@ -52,7 +54,7 @@ const ContactSection = () => {
               Address
             </h3>
             <h6 className="text-[#fbfbfb] font-medium text-[18px] max-md:text-[14px]">
-              Burjuman, Dubai, UAE
+              {contactData?.attributes?.Location}
             </h6>
           </div>
           <div>
@@ -60,12 +62,10 @@ const ContactSection = () => {
               Linked in
             </h3>
             <Link
-              href={
-                "https://www.linkedin.com/in/jeleshia-biyanka-lobo-04605213a"
-              }
+              href={contactData?.attributes?.LinkedInLink}
               className="text-[#fbfbfb] hover:text-[#e0e0e0] font-medium text-[18px] max-md:text-[14px]"
             >
-              www.linkedin.com/in/jeleshia-biyanka-lobo
+              {contactData?.attributes?.LinkedIn}
             </Link>
           </div>
           <div>
@@ -73,10 +73,10 @@ const ContactSection = () => {
               Phone
             </h3>
             <Link
-              href={"tel:+971588121153"}
+              href={contactData?.attributes?.PhoneLink}
               className="text-[#fbfbfb] hover:text-[#e0e0e0] font-medium text-[18px] max-md:text-[14px]"
             >
-              +971 58 812 1153
+              {contactData?.attributes?.Phone}
             </Link>
           </div>
           <div>
@@ -84,16 +84,14 @@ const ContactSection = () => {
               Linked in
             </h3>
             <Link
-              href={"mailto:jeleshialobo@gmail.com"}
+              href={contactData?.attributes?.EmailLink}
               className="text-[#fbfbfb] hover:text-[#e0e0e0] font-medium text-[18px] max-md:text-[14px]"
             >
-              jeleshialobo@gmail.com
+              {contactData?.attributes?.Email}
             </Link>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default ContactSection;
+}
