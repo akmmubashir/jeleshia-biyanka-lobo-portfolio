@@ -17,7 +17,7 @@ export default async function HeroSection() {
           className="w-fit absolute top-0 left-0"
         />
         <div className="relative z-10 max-md:pt-[80px]">
-          <h1 className="text-[72px] max-2xl:text-[62px] max-lg:text-[56px] max-md:text-[36px] text-white font-semibold w-2/3 max-md:w-full">
+          <h1 className="text-[72px] max-2xl:text-[62px] max-lg:text-[56px] max-md:text-[36px] text-white font-semibold w-2/3 max-2xl:w-full max-md:w-full">
             {profileData?.attributes?.FullName}
           </h1>
           <div className="mt-[20px]">
