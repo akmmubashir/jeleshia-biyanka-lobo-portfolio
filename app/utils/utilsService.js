@@ -116,29 +116,37 @@ const fetchData = async (endpoint) => {
 };
 
 export const fetchEducationData = async () => {
-  return await fetchData('educations');
+  return await fetchData("educations");
 };
 
 export const fetchProfileData = async () => {
-  return await fetchData('profile');
+  return await fetchData("profile");
 };
 
 export const fetchContactData = async () => {
-  return await fetchData('contact-info');
+  return await fetchData("contact-info");
 };
 
 export const fetchSkillsData = async () => {
-  return await fetchData('skills-lists');
+  return await fetchData("skills-lists");
 };
 
 // Utility function to fetch data with revalidation
-const fetchWithRevalidation = async (key, fetchFunction, revalidateInterval) => {
+const fetchWithRevalidation = async (
+  key,
+  fetchFunction,
+  revalidateInterval,
+) => {
   const cachedData = JSON.parse(localStorage.getItem(key));
   const lastFetchTime = localStorage.getItem(`${key}_fetchTime`);
 
   const now = Date.now();
 
-  if (cachedData && lastFetchTime && (now - lastFetchTime < revalidateInterval * 1000)) {
+  if (
+    cachedData &&
+    lastFetchTime &&
+    now - lastFetchTime < revalidateInterval * 1000
+  ) {
     return cachedData;
   }
 
@@ -152,21 +160,36 @@ const fetchWithRevalidation = async (key, fetchFunction, revalidateInterval) => 
 const revalidateInterval = 3600; // in seconds
 
 export const getEducationData = async () => {
-  return await fetchWithRevalidation('educationData', fetchEducationData, revalidateInterval);
+  return await fetchWithRevalidation(
+    "educationData",
+    fetchEducationData,
+    revalidateInterval,
+  );
 };
 
 export const getProfileData = async () => {
-  return await fetchWithRevalidation('profileData', fetchProfileData, revalidateInterval);
+  return await fetchWithRevalidation(
+    "profileData",
+    fetchProfileData,
+    revalidateInterval,
+  );
 };
 
 export const getContactData = async () => {
-  return await fetchWithRevalidation('contactData', fetchContactData, revalidateInterval);
+  return await fetchWithRevalidation(
+    "contactData",
+    fetchContactData,
+    revalidateInterval,
+  );
 };
 
 export const getSkillsData = async () => {
-  return await fetchWithRevalidation('skillsData', fetchSkillsData, revalidateInterval);
+  return await fetchWithRevalidation(
+    "skillsData",
+    fetchSkillsData,
+    revalidateInterval,
+  );
 };
-}
 
 export async function fetchProfileData() {
   const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL;
