@@ -8,8 +8,8 @@ export async function fetchEducationData() {
     const res = await axios.get(`${strapiUrl}/educations`, {
       headers: {
         Authorization: `Bearer ${strapiToken}`,
+        "Cache-Control": "no-store",
       },
-      next: { revalidate: 0 },
     });
 
     if (!res.status === 200) {
@@ -88,4 +88,15 @@ export async function fetchSkillsData() {
     console.error("Error fetching data from Strapi:", error);
     throw error;
   }
+}
+
+export async function getStaticProps() {
+  const data = await fetchEducationData();
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 10, // Revalidate every 10 seconds
+  };
 }

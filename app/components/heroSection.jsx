@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Vector from "@/app/assets/common/vector.png";
+import Vector from "@/app/assets/common/vector2.png";
 import Avatar from "@/app/assets/common/profile.webp";
 import Link from "next/link";
 import { fetchProfileData } from "../utils/utilsService";

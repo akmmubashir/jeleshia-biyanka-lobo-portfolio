@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 
 const HomePage = () => {
   return (
-    <div className="bgColor overflow-hidden">
+    <div className="bg-[#2a2a2a] overflow-hidden">
       <Header />
       <HeroSection />
       <AboutSection />

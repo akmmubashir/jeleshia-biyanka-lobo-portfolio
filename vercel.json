@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/$1",
+        "headers": {
+          "cache-control": "no-store, max-age=0"
+        }
+      }
+    ]
+  }
+  
