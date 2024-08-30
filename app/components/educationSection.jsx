@@ -1,8 +1,7 @@
 import React from "react";
-import { fetchEducationData } from "../utils/utilsService";
 
-export default async function EducationPage() {
-  const data = await fetchEducationData();
+export default async function EducationPage({data}) {
+  // const data = await fetchEducationData();
 
   return (
     <div className="flex flex-col p-[80px_120px] max-2xl:p-[80px_80px] max-md:p-[40px_20px] gap-y-[20px] max-md:gap-y-[10px]">
